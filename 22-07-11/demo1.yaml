@@ -1,0 +1,9 @@
+login:
+  title: 登录
+  url: mall-member/sso/login
+  method: post
+  info: 场景为:前台会员登录
+  data:
+    - { "username": "admin", "password": "123456", 'except_msg': '操作成功','except_code': 200, ' info': '正确的登录' }
+    - { "username": "sss", "password": "123456", "except_msg": 'Bad credentials', 'except_code': 500, 'info ': '用户名错误的登录' }
+
